@@ -1980,7 +1980,7 @@
         <param index="6" label="Longitude">Longitude</param>
         <param index="7">Reserved</param>
       </entry>
-      <entry value="5005" name="MAV_CMD_NAV_FENCE_BREACH_ACTION" hasLocation="false" isDestination="false">
+      <entry value="5005" name="MAV_CMD_SET_FENCE_BREACH_ACTION" hasLocation="false" isDestination="false">
         <wip/>
         <!-- This message is work-in-progress and it can therefore change. It should NOT be used in stable production environments. -->
         <description>Sets the action on geofence breach.
