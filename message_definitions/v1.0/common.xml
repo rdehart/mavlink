@@ -5701,6 +5701,11 @@
     </message>
     <!-- MESSAGE IDs 180 - 229: Space for custom messages in individual projectname_messages.xml files -->
     <!-- 192 MAG_CAL_REPORT imported from ardupilotmega.xml -->
+    <message id="229" name="SETPOINT_MOTOR">
+      <description>Control Motors directly</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (UNIX Epoch time or time since system boot). The receiving end can infer timestamp format (since 1.1.1970 or since system boot) by checking for the magnitude of the number.</field>
+      <field type="float[8]" name="setpoint">Motor throttle in range [-1..1]</field>
+    </message>
     <message id="192" name="MAG_CAL_REPORT">
       <description>Reports results of completed compass calibration. Sent until MAG_CAL_ACK received.</description>
       <field type="uint8_t" name="compass_id" instance="true">Compass being calibrated.</field>
